@@ -1,19 +1,19 @@
 import { Outlet } from "react-router-dom"
 import HeaderPage from "../../components/header/header"
 import FooterPage from "../../components/footer/footer"
-
+import "./default-client.css"
 const DefaultClient = () => {
   return (
     <div>
-        <div>
+        <div className="header-main">
             <HeaderPage/>
         </div>
 
-        <div>
+        <div className="outlet-main">
             <Outlet/>
         </div>
 
-        <div>
+        <div className="footer-main">
             <FooterPage/>
         </div>
     </div>
