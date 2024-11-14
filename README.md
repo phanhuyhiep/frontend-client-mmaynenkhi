@@ -33,6 +33,7 @@ npm install gh-pages --save-dev
 ```
 
 ```bash
+"homepage": "https://phanhuyhiep.github.io/frontend-client-mmaynenkhi",
 // NPM
 "scripts": {
     "predeploy": "npm run build",
@@ -50,5 +51,12 @@ npm install gh-pages --save-dev
 npm run deploy
 # YARN
 yarn run deploy
+```
+
+```bash
+export default defineConfig({
+  plugins: [react()],
+  base:"/frontend-client-mmaynenkhi/",
+})
 ```
 
