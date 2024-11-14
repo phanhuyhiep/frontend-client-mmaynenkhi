@@ -1,0 +1,5 @@
+.slider-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Đảm bảo ảnh không bị méo */
+  }
