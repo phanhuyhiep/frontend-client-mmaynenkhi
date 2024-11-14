@@ -54,9 +54,16 @@ yarn run deploy
 ```
 
 ```bash
-export default defineConfig({
-  plugins: [react()],
-  base:"/frontend-client-mmaynenkhi/",
+// chỉ chạy trên môi trường production
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vite.dev/config/
+export default defineConfig(({ mode }) => {
+  return {
+    plugins: [react()],
+    base: mode === 'production' ? '/frontend-client-mmaynenkhi/' : '/',
+  }
 })
 ```
 
