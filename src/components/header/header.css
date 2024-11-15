@@ -1,53 +1,90 @@
+.header-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: rgb(5, 160, 250);
+  padding: 10px;
+  height: 10px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.header-tool {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.header-tool .header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.header-tool .header-logo img {
+  width: 150px;
+  height: 70px;
+}
+.header-tool .header-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
 
-.header-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    background-color: rgb(5, 160, 250);
-    padding: 10px;
-    height: 10px;
+.header-tool .header-search input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 100px;
+  width: 750px;
 }
-.header-tool{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+.header-tool .header-search input:focus {
+  background-color: initial;
+  outline: none;
+  border-color: initial;
 }
-.header-tool .header-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
+.header-tool .header-search button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(5, 160, 250);
+  color: white;
 }
-.header-tool .header-logo img{
-    width: 200px;
-    height: 100px;
+.header-tool .header-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 10px; */
 }
-.header-tool .header-search{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
+.header-tool .header-cart p {
+  /* margin-right: 10px; */
+  margin-left: 10px;
+  color: tomato;
+  font-size: larger;
 }
-
 .header-menu {
-    padding: 20px;
-    background-color: rgb(5, 160, 250);
-    color: white;
+  padding: 20px;
+  background-color: rgb(5, 160, 250);
+  color: white;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .header-menu ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
-    align-items: center;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
 }
 .header-menu ul li {
-    list-style: none;
-    margin-right: 10px;
-    cursor: pointer;
-    display: inline-block;
+  list-style: none;
+  margin-right: 10px;
+  cursor: pointer;
+  display: inline-block;
 }

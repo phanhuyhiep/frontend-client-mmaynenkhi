@@ -1,0 +1,88 @@
+.trending {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    /* margin-bottom: 20px; */
+    flex-wrap: wrap;
+}
+
+.trending .trending-title {
+    display: flex;
+    align-items: center;
+    width: 100%;      
+}
+.trending .trending-title h2{
+    margin: 0;
+    padding-right: 10px; 
+    border: none;
+    color: rgb(5, 160, 250);
+    border: 4px solid rgb(5, 160, 250);
+    padding: 20px;
+}
+.trending-title hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 4px solid rgb(5, 160, 250);
+    margin: 0;
+  }
+.trending-component {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* margin-bottom: 20px; */
+    flex-wrap: wrap;
+    
+}
+
+.trending-component .item-trending {
+    display: flex;
+    border: 1px solid rgb(230, 234, 236);
+    margin: 20px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 22%;
+    box-sizing: border-box;
+    /* background-color: rgb(5, 160, 250); */
+}
+.item-trending img {
+    width: 100%;
+    height: auto;
+    /* padding: 10px; */
+}
+.item-trending p {
+    margin: 5px;
+    text-align: center;
+    /* Add compatibility for different browsers */
+    display: -webkit-box;           /* Required for -webkit-line-clamp */
+    display: -moz-box;              /* Support for Firefox */
+    display: -ms-flexbox;           /* Support for Internet Explorer */
+    display: -o-box;                /* Older Opera versions */
+    display: flex;                  /* Standard flexbox layout */
+    -webkit-box-orient: vertical;   /* Required for WebKit-based browsers */
+    -moz-box-orient: vertical;      /* For Firefox */
+    box-orient: vertical;           /* Standard */
+    overflow: hidden;               /* Hide overflow */
+    text-overflow: ellipsis;        /* Add ellipsis when content overflows */
+    -webkit-line-clamp: 2;          /* Limits content to 2 lines (for WebKit browsers) */
+    /* Use standard 'line-clamp' property, though not widely supported yet */
+    line-clamp: 2;                  /* This is currently non-standard, but you can include it for future compatibility */
+  }
+
+  .category-name {
+    color: rgb(5, 160, 250);
+  }
+
+  .price {
+    color: rgb(5, 83, 250);          
+  }
+
+  .item-trending button {          
+    background-color: rgb(5, 160, 250);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }

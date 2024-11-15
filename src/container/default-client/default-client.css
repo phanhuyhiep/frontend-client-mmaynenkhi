@@ -5,14 +5,14 @@ body {
     box-sizing: border-box;
   }
 
-.header-main{
+/* .header-main{
     margin-left: 100px;
     margin-right: 100px;
 }
 .footer-main{
     margin-left: 200px;
     margin-right: 200px;
-}
+} */
 .outlet-main{
     padding-top: 20px;
     padding-bottom: 20px;

@@ -1,3 +1,4 @@
+import { FaCartArrowDown } from "react-icons/fa";
 import "./header.css";
 const HeaderPage = () => {
   return (
@@ -8,15 +9,18 @@ const HeaderPage = () => {
       </div>
       <div className="header-tool">
         <div className="header-logo">
-          <img src="https://res.cloudinary.com/dq9oahl3j/image/upload/v1731558483/ivtxmsz74ilchpjywtv0.jpg" alt="logo" />
+          <img
+            src="https://res.cloudinary.com/dq9oahl3j/image/upload/v1731558483/ivtxmsz74ilchpjywtv0.jpg"
+            alt="logo"
+          />
         </div>
         <div className="header-search">
           <input type="text" placeholder="Tìm kiếm" />
-          <button>Search</button>
+          <button>Tìm kiếm</button>
         </div>
         <div className="header-cart">
+          <FaCartArrowDown size={40} color="rgb(5, 160, 250)"/>
           <p>Giỏ hàng: 0đ</p>
-          <img src="./images/cart.png" alt="" />
         </div>
       </div>
       <div className="header-menu">
